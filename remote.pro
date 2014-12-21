@@ -20,6 +20,11 @@ DEPENDPATH += botan/ ssh/
 include(botan/botan.pri)
 include(ssh/ssh.pri)
 
+SOURCES += main.cpp \
+    expressremote.cpp \
+    argparser.cpp
+HEADERS += \
+    expressremote.h \
+    argparser.h
 
-SOURCES += main.cpp remoteprocesstest.cpp argumentscollector.cpp
-HEADERS += remoteprocesstest.h argumentscollector.h
+RC_FILE = WindowsResources/win_rsrc.rc
